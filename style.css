@@ -40,7 +40,7 @@ img{max-width: 100%;}
     .menu {position: absolute; top:50px; left:-100%; width: 75vw; height: calc(100vh - 50px); transition:0.5s; background-color: rgba(0, 0, 0, 0.86)}
     .menu ul{flex-direction: column; text-align: center;}
     .menu ul li a{color:#fff;}
-    .menu ul li a:hover, .hide-menu:hover{background-color: rgba(0, 0, 0, 0.96);}
+    .menu ul li a:hover, .hide-menu:hover{background-color: #2196f3;}
     }
 
 /*capa*/
