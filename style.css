@@ -8,7 +8,7 @@ img{max-width: 100%;}
 
 .cabecalho .logo{color: #2424e2;; font-size: 1.7rem;}
 
-.menu.active{left:0}
+.menu.active{left:0} /*classe criada para a responsividade no menu*/
 
 .menu ul{display:flex; height: 50px; font-weight: bold;}
 
@@ -16,16 +16,37 @@ img{max-width: 100%;}
 
 .menu ul li a:hover,.hide-menu:hover{background-color: #cecece; transition:0.5s;}
 
+/*menu responsivo*/
 .show-menu,.hide-menu {display: none;}
 
-@media screen and (max-width:750px){
-    .show-menu{display: block; font-size: 1.5rem; color: #2424e2;; cursor: pointer;}
-    .hide-menu{display: block; height: 50px; line-height: 50px; color:#2424e2; cursor: pointer;}
-    .menu {position: absolute; top:50px; left:-100%; width: 75vw; height: calc(100vh - 50px); transition:0.5s; background-color: rgba(0, 0, 0, 0.69)}
-    .menu ul{flex-direction: column; text-align: center;}
-    }
+.show-menu .line{width: 34px; height:5px; background: #2424e2; display: block; margin: 5px auto; transition:all 0.3s ease-in-out;}
 
+.show-menu.ativo .line:nth-child(2){
+    opacity: 0;
+}
+
+.show-menu.ativo .line:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+
+.show-menu.ativo .line:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+}
+/*fim do menu responsivo*/
+
+@media screen and (max-width:750px){
+    .show-menu{display: block; /*font-size: 1.7rem; color: #2424e2;*/ cursor: pointer;}
+    /*.hide-menu{display: block; height: 50px; line-height: 50px; color:#fff; cursor: pointer; font-size: 1.7rem;}*/
+    .menu {position: absolute; top:50px; left:-100%; width: 75vw; height: calc(100vh - 50px); transition:0.5s; background-color: rgba(0, 0, 0, 0.86)}
+    .menu ul{flex-direction: column; text-align: center;}
+    .menu ul li a{color:#fff;}
+    .menu ul li a:hover, .hide-menu:hover{background-color: rgba(0, 0, 0, 0.96);}
+    }
 
 /*capa*/
 .capa{width: 100vw; height: 100vh; background-image: url(img/capa.jpg); background-repeat: no-repeat; background-size: cover; background-position: center left;}
+
+@media screen and (max-width:750px){
+    .capa{background-size: 100vw 100vh}
+}
 
