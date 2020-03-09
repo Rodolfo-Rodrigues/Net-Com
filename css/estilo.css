@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -24,8 +25,15 @@ body {
 .capa {
     width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
@@ -37,8 +45,14 @@ body {
 .title_logo {
     position: absolute;
     top: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
     padding: 15px;
@@ -65,20 +79,34 @@ body {
 }
 
 .contatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #d1d1d1;
     padding: 10px;
     width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .redes-sociais {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 10px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -96,6 +124,7 @@ body {
 }
 
 .redes-sociais iframe {
+    -webkit-box-shadow: 4px 4px 6px;
     box-shadow: 4px 4px 6px;
 }
 
@@ -115,19 +144,31 @@ body {
 }
 
 .contatos i:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background: #5c5cff;
 }
 
 .conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 10px;
     border-bottom: 2px solid blue;
@@ -137,32 +178,43 @@ body {
 .conteudo img {
     width: 50%;
     margin: 20px;
+    -webkit-box-shadow: 4px 4px 6px;
     box-shadow: 4px 4px 6px;
 }
 
 .conteudo img:hover,
 .caixa-estudio img:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .title_paragraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .conteudo p {
+    -webkit-box-shadow: 4px 4px 6px;
     box-shadow: 4px 4px 6px;
     padding: 10px;
     background-color: #f4f455;
     border-radius: 10px;
     margin-top: 15px;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
 }
 
 .conteudo h2 {
     font-size: 1rem;
     background-color: green;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -177,19 +229,27 @@ body {
 
 /*estudio*/
 .caixa-estudio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #c6c6c6;
 }
 
 .caixa-estudio div {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 15px;
 }
 
 .caixa-estudio img {
     margin: 0 10px;
+    -webkit-box-shadow: 4px 4px 6px;
     box-shadow: 4px 4px 6px;
 }
 
@@ -211,16 +271,26 @@ body {
 
 .programa {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     background-color: #fc8800;
 }
 
 .programa div {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -234,15 +304,25 @@ body {
 .programa img {
     width: 50%;
     margin: 15px;
+    -webkit-box-shadow: 4px 4px 6px;
     box-shadow: 4px 4px 6px;
 }
 
 .rodape {
     position: relative;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     display: flex;
     background-color: #fff;
@@ -279,6 +359,9 @@ body {
     }
 
     .redes-sociais {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -293,6 +376,9 @@ body {
     }
 
     .conteudo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         border-left: 2px solid blue;
         margin: 0 5px 0 5px;
@@ -300,6 +386,7 @@ body {
 
     .conteudo img,
     .conteudo p {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
 
@@ -310,6 +397,7 @@ body {
     .conteudo h2 {
         font-size: 1rem;
         background-color: green;
+        -ms-flex-item-align: start;
         align-self: flex-start;
         margin-bottom: 10px;
         padding: 5px;
@@ -324,7 +412,12 @@ body {
 
     .caixa-estudio div {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding: 10px;
     }
@@ -341,3 +434,101 @@ body {
         font-size: 0.9rem;
     }
 }
+
+@media print and (max-width:594mm){
+    body {
+        width: 100%;
+    }
+
+    .title_logo {
+        top: -20px;
+        font-weight: bolder;
+    }
+
+    .logo {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .contatos i {
+        padding: 5px 5px 0 5px;
+        font-size: 1.5rem;
+    }
+
+    .redes-sociais {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .redes-sociais iframe {
+        width: 100vh;
+
+    }
+    
+    .title_logo h1 {
+        font-size: .8rem;
+        width: 200px;
+    }
+
+    .conteudo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-left: 2px solid blue;
+        margin: 0 5px 0 5px;
+    }
+
+    .conteudo img,
+    .conteudo p {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+
+    .conteudo h2 {
+        font-size: 1rem;
+        background-color: green;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        margin-bottom: 10px;
+        padding: 5px;
+        color: #fff;
+        text-align: left;
+        border-radius: 10px;
+    }
+    
+    .caixa-estudio h3{
+        font-size: 1rem;
+    }
+
+    .caixa-estudio div {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .caixa-estudio img {
+        margin: 10px;
+    }
+
+    .programa p {
+        font-size: 0.9rem;
+    }
+
+    .rodape h4 {
+        font-size: 0.9rem;
+    }
+}
+
