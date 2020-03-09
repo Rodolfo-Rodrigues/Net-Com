@@ -17,8 +17,9 @@ img {
 /* fim do css reset*/
 
 body {
-    width: 80%;
+    width: 1280px;
     margin: 0 auto;
+    
 }
 
 /*capa e conteudos*/
