@@ -1,0 +1,343 @@
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* fim do css reset*/
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*capa e conteudos*/
+.capa {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.title_logo {
+    position: absolute;
+    top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.dslogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.contatos i {
+    padding: 5px 10px 0 10px;
+    font-size: 1.9rem;
+}
+
+.contatos i.fa-whatsapp {
+    color: #085c08;
+}
+
+.contatos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #d1d1d1;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.redes-sociais {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes-sociais nav {
+    padding: 10px;
+    text-align: center;
+}
+
+.redes-sociais nav a {
+    color: green;
+}
+
+.redes-sociais nav a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociais iframe {
+    box-shadow: 4px 4px 6px;
+}
+
+.contatos a {
+    color: blue;
+    font-size: 1rem;
+    text-transform: lowercase;
+    display: block;
+}
+
+.contatos i.fa-instagram {
+    color: #e95950;
+}
+
+.contatos i.fa-envelope-square {
+    color: blue;
+}
+
+.contatos i:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #5c5cff;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+}
+
+.conteudo img {
+    width: 50%;
+    margin: 20px;
+    box-shadow: 4px 4px 6px;
+}
+
+.conteudo img:hover,
+.caixa-estudio img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.title_paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo p {
+    box-shadow: 4px 4px 6px;
+    padding: 10px;
+    background-color: #f4f455;
+    border-radius: 10px;
+    margin-top: 15px;
+    flex-basis: 50%;
+}
+
+.conteudo h2 {
+    font-size: 1rem;
+    background-color: green;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+
+}
+
+/*fim da capa e conteudos*/
+
+/*estudio*/
+.caixa-estudio {
+    display: flex;
+    flex-direction: column;
+    background-color: #c6c6c6;
+}
+
+.caixa-estudio div {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+}
+
+.caixa-estudio img {
+    margin: 0 10px;
+    box-shadow: 4px 4px 6px;
+}
+
+.caixa-estudio h3,
+.programa h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #fff;
+    color: darkred;
+    text-decoration: underline;
+}
+
+/*fim do estudio*/
+
+/*programação*/
+
+
+.programa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #fc8800;
+}
+
+.programa div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.programa p {
+    width: 50%;
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.programa img {
+    width: 50%;
+    margin: 15px;
+    box-shadow: 4px 4px 6px;
+}
+
+.rodape {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #fff;
+
+}
+
+.rodape h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:812px) {
+    body {
+        width: 100%;
+    }
+
+    .title_logo {
+        top: -20px;
+        font-weight: bolder;
+    }
+
+    .logo {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .contatos i {
+        padding: 5px 5px 0 5px;
+        font-size: 1.5rem;
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+    }
+
+    .redes-sociais iframe {
+        width: 100%;
+
+    }
+
+    .title_logo h1 {
+        font-size: .8rem;
+        width: 200px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        border-left: 2px solid blue;
+        margin: 0 5px 0 5px;
+    }
+
+    .conteudo img,
+    .conteudo p {
+        flex-basis: 100%;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+
+    .conteudo h2 {
+        font-size: 1rem;
+        background-color: green;
+        align-self: flex-start;
+        margin-bottom: 10px;
+        padding: 5px;
+        color: #fff;
+        text-align: left;
+        border-radius: 10px;
+    }
+    
+    .caixa-estudio h3{
+        font-size: 1rem;
+    }
+
+    .caixa-estudio div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .caixa-estudio img {
+        margin: 10px;
+    }
+
+    .programa p {
+        font-size: 0.9rem;
+    }
+
+    .rodape h4 {
+        font-size: 0.9rem;
+    }
+}
