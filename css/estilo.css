@@ -64,10 +64,8 @@ body {
 }
 
 .dslogo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 5px;
+    width: 200px;
+    height: 100px;
 }
 
 .contatos i {
@@ -157,7 +155,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background: #5c5cff;
+    background: #7c7cf7;
 }
 
 .conteudo {
@@ -183,13 +181,6 @@ body {
     box-shadow: 4px 4px 6px;
 }
 
-.conteudo img:hover,
-.caixa-estudio img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
 
 .title_paragraph {
     display: -webkit-box;
@@ -255,7 +246,8 @@ body {
 }
 
 .caixa-estudio h3,
-.programa h3 {
+.programa h3,
+.cobertura h3 {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -330,6 +322,53 @@ body {
 
 }
 
+/*fim da programação */
+
+/*cobertura*/
+.cobertura {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c6c6c6;
+}
+
+.cobertura div {
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+.cobertura img {
+    box-shadow: 4px 4px 6px;
+   margin-left: 20px;
+}
+
+.cobertura table {
+    margin: 10px auto;
+    box-shadow: 4px 4px 6px;
+    border-collapse: collapse;
+}
+
+.cobertura table,
+.cobertura th,
+.cobertura td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.cobertura thead,
+.cobertura tfoot {
+    font-weight: bolder;
+    font-size: 1.1rem, padding: 5px;
+    background-color: yellow;
+}
+
+.cobertura tbody{
+    background: #fff;}
+
+/*fim da cobertura*/
+
+/*footer */
 .rodape h4 {
     font-size: 1.2rem;
     text-align: center;
@@ -406,8 +445,8 @@ body {
         text-align: left;
         border-radius: 10px;
     }
-    
-    .caixa-estudio h3{
+
+    .caixa-estudio h3 {
         font-size: 1rem;
     }
 
@@ -431,105 +470,26 @@ body {
         font-size: 0.9rem;
     }
 
-    .rodape h4 {
-        font-size: 0.9rem;
-    }
-}
-
-@media print and (max-width:594mm){
-    body {
-        width: 100%;
-    }
-
-    .title_logo {
-        top: -20px;
-        font-weight: bolder;
-    }
-
-    .logo {
-        width: 80px;
-        padding: 5px;
-    }
-
-    .contatos i {
-        padding: 5px 5px 0 5px;
-        font-size: 1.5rem;
-    }
-
-    .redes-sociais {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    .cobertura {
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #c6c6c6;
     }
-
-    .redes-sociais iframe {
-        width: 100vh;
-
+    .cobertura img{
+       margin-left: 0;
     }
     
-    .title_logo h1 {
-        font-size: .8rem;
-        width: 200px;
-    }
-
-    .conteudo {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        border-left: 2px solid blue;
-        margin: 0 5px 0 5px;
-    }
-
-    .conteudo img,
-    .conteudo p {
-        -ms-flex-preferred-size: 100%;
+    .cobertura div {
         flex-basis: 100%;
-    }
-
-    .conteudo img {
-        width: 100%;
-    }
-
-    .conteudo h2 {
-        font-size: 1rem;
-        background-color: green;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
-        margin-bottom: 10px;
-        padding: 5px;
-        color: #fff;
-        text-align: left;
-        border-radius: 10px;
-    }
-    
-    .caixa-estudio h3{
-        font-size: 1rem;
-    }
-
-    .caixa-estudio div {
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .caixa-estudio img {
-        margin: 10px;
-    }
-
-    .programa p {
-        font-size: 0.9rem;
+        margin: 5px auto;
+        padding: 15px;
+        
     }
 
     .rodape h4 {
         font-size: 0.9rem;
     }
 }
-
