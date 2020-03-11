@@ -6,10 +6,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     list-style-type: none;
-    font-size: 100%;
-    scroll-behavior: smooth;
+    font-size: 100%; 
 }
 */
 img {
@@ -22,6 +20,8 @@ body {
     width: 80%;
     margin: 0 auto;
     max-width: 1280px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*menu*/
