@@ -4,7 +4,7 @@ img{max-width: 100%;}
 /*Fim do CSS Reset*/ 
 
 /*topo*/
-.menu {display: flex; justify-content: space-between; background: #191414; align-items: center; position: relative;}
+.menu {width: 100%; display: flex; justify-content: space-between; background: #191414; align-items: center; position: relative;}
 .menu .logo {width: 100px; height: 65px;}
 .menu ul {display: flex; align-items: center;}
 .menu a{ color: #fff; text-transform: uppercase; padding: 10px; display: block; font-weight: bold;}
