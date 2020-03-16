@@ -13,7 +13,7 @@ i.show_menu{display: none;}
 .menu ul.active{left: 0; transition: all 0.6s;}/*classe adicionada para o menu responsivo*/
 
 @media screen and (max-width:812px){
-    .menu {width: 100vw;}
+    .menu {width: 100%; justify-content: space-around;}
     .menu ul{position: absolute; flex-direction: column; width: 100%; height: calc(100vh - 89px); background: rgba(25, 20, 20, 0.87); text-align: center; top: 89px; left: -110%; transition: all 0.6s;}
     .menu li {display: block; width: 100vw; border-bottom: 1px solid white;}
     .menu li:nth-child(1){ border-top: 1px solid white; }
