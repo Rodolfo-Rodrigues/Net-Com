@@ -14,10 +14,11 @@ i.show_menu{display: none;}
 
 @media screen and (max-width:812px){
     .menu {width: 100%; justify-content: space-around;}
-    .menu ul{position: absolute; flex-direction: column; width: 100%; height: calc(100vh - 89px); background: rgba(25, 20, 20, 0.87); text-align: center; top: 89px; left: -110%; transition: all 0.6s;}
+    .menu .logo {width: 90px;}
+    .menu ul{position: absolute; flex-direction: column; width: 100%; height: calc(100vh - 89px); background: rgba(25, 20, 20, 0.87); text-align: center; top: 89px; left: -100%; transition: all 0.6s;}
     .menu li {display: block; width: 100vw; border-bottom: 1px solid white;}
     .menu li:nth-child(1){ border-top: 1px solid white; }
-    i.show_menu{display: block; color: white; margin-right: 10px; cursor: pointer; font-size: 2rem;}
+    i.show_menu{display: block; color: white; cursor: pointer; font-size: 2rem;}
 }
 /*fim do topo*/
 
