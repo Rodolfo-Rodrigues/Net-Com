@@ -74,6 +74,7 @@ main {max-width: 1366px; margin: 0 auto;}
 .rodape li{flex-grow: 1; text-align: center; border-right: 1px solid white;}
 .rodape li:nth-child(6) {border-right: none;}
 @media screen and (max-width:812px){
+    .rodape li{border-right: none;}
     .rodape .menu {flex-direction: column;}
 }
 /*fim do rodapé*/
